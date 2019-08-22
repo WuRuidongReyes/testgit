@@ -1,0 +1,24 @@
+<div class="hero-detial">
+  <h1>英雄详情</h1>
+  <div *ngIf="hero$|async as hero">
+    <fieldset>
+      <legend>{{hero.name}}详情</legend>
+      <div class="text-line">
+        <label for="id">编号：</label>
+        <input #input_id name="id" readonly="readonly" [value]="hero.id"><br>
+      </div>
+      <div class="text-line">
+        <label for="name">名称：</label>
+        <input #input_name name="name" type="text" [value]="hero.name" placeholder="input hero name"><br>
+      </div>
+      <div class="button-line">
+        <button type="submit" (click)="onOKClick(input_id.value,input_name.value)">修改</button>
+        <button (click)="goBack()">返回</button>
+      </div>
+    </fieldset>
+  </div>
+  <div *ngIf="!hero$">
+    <p>未找到该英雄</p>
+    <button (click)="goBack()">返回</button>
+  </div>
+</div>

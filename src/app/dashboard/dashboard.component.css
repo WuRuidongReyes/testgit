@@ -1,0 +1,35 @@
+.dashboard {
+    position: fixed;
+    top: 80px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+h1 {
+    display: block;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    padding: 50px 15px;
+    font-size: 15px;
+    background: rgb(40, 47, 148);
+    color: white;
+    border-radius: 5%;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.644);
+    
+}
+a:hover {
+    background: rgb(0, 238, 255);
+    border: 5px solid rgb(0, 238, 255);
+    border-radius: 10%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 5px;
+    text-shadow: 2px 2px 2px #000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
+}
+

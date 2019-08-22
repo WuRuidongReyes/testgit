@@ -1,0 +1,46 @@
+.hero-detial {
+    position: fixed;
+    top: 80px;
+}
+fieldset {
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.534);
+}
+legend {
+    font-size: 25px;
+}
+.text-line {
+    padding: 5px 10px;
+}
+input,label {
+    font-size: 20px;
+}
+input {
+    padding: 5px;
+    padding-left: 10px;
+    border: 0px;
+}
+input:focus {
+    border-radius: 5px;
+    box-shadow: 0px 1px rgb(22, 108, 228),
+                0px -1px rgb(22, 108, 228); 
+}
+.button-line {
+    text-align: right;
+}
+button {
+    padding:5px 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(216, 216, 216);
+    border: 0px;
+}
+button:hover {
+    background: rgb(240, 240, 240);
+    box-shadow: 0px 0px 3px rgb(22, 108, 228); 
+}
+button:active {
+    box-shadow: 0px 0px 5px 1px rgb(22, 108, 228);
+}

@@ -1,0 +1,9 @@
+<div>
+  <input id='aa' class="search-box" #searchbox placeholder="英雄名称" (focus)="onFocus()" (blur)="onBlur()" (input)="onSearch(searchbox.value)">
+  <button (click)="onSearch(searchbox.value)">搜索</button>
+</div>
+<ul *ngIf="searchbox.value&&!hidden" id="bb">
+  <li *ngFor="let hero of searchResult" (mouseover)="onListMouseOver(hero.id)" (mouseout)="onListMouseOut()">
+    <a>{{hero.name}}</a>
+  </li>
+</ul>

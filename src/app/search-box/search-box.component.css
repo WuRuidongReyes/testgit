@@ -1,0 +1,63 @@
+div {
+    display: flex;
+    position: absolute;
+    right: 30px;
+}
+input, button {
+    border:none;
+    font-size: 15px;
+    margin: 20px 0px;
+}
+input {
+    padding: 10px 5px 10px 35px;
+    border-radius: 100px 0px 0px 100px;
+    background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+    /* background-image: url('/src/assets/images/searchicon.png'); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100px;
+}
+button {
+    padding: 10px 15px 10px 5px;
+    border-radius: 0px 100px 100px 0px;
+    background: #FFF;
+}
+input:focus {
+    /* animation: search-onfocus 0.2s;
+    -wabkit-animation: search-onfocus 0.2s; */
+    width: 200px;
+}
+ul {
+    list-style-type: none;
+    position: fixed;
+    top: 50px;
+    right: 80px;
+    width: 210px;
+    padding: 0px;
+    color: #000;
+    background: #FFF;
+    box-shadow: 0px 2px 7px -5px;
+}
+li {
+    padding: 5px;
+}
+li:hover {
+    background: rgb(156, 156, 156);
+    color: #FFF;
+}
+@keyframes search-onfocus {
+    from {width: 100px}
+    to   {width: 200px;}
+}
+@-webkit-keyframes search-onfocus {
+    from {width: 100px;}
+    to   {width: 200px;}
+}
+@keyframes search-onblur {
+    from {width: 200px;}
+    to   {width: 100px;}
+}
+@-webkit-keyframes search-onblur {
+    from {width: 200px;}
+    to   {width: 100px;}
+}

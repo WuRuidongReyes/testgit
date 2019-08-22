@@ -1,0 +1,45 @@
+div.hero-list-box {
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    bottom: 0px;
+    width: 250px;
+}
+h1 {
+    text-align: center;
+    height: 42px;
+    margin: 19px 0px;
+}
+div.hero-list {
+    margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    overflow: auto;
+}
+li {
+    background: rgb(216, 216, 216);
+    width: 90%;
+    list-style-type: none;
+    border-radius: 15px 5px;
+    margin: 5px 5%;
+    padding: 0px;
+    cursor: pointer;
+}
+li span {
+    height: 100%;
+    display: inline-block;
+    background: rgb(25, 118, 252);
+    color: #FFF;
+    padding: 10px;
+    margin: 0px;
+    text-align: left;
+    border-radius: 15px 0px 0px 5px;
+}
+li:hover {
+    background: rgb(240, 240, 240);
+    box-shadow: 2px 0px 0px 0px rgb(22, 108, 228);
+}
+div.hero-list::-webkit-scrollbar {
+    width: 0px;
+}

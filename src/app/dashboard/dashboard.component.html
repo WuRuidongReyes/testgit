@@ -1,0 +1,8 @@
+<div class="dashboard">
+  <h1>位列云端</h1>
+  <div>
+    <a *ngFor="let hero of heroes.slice(0,4)" routerLink="/herodetail/{{hero.id}}">
+      {{hero.name}}
+    </a>
+  </div>
+</div>
