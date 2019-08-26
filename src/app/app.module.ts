@@ -19,7 +19,6 @@ import { SearchBoxComponent } from './search-box/search-box.component';
    imports: [
       BrowserModule,
       AppRoutingModule,
-      Animation
    ],
    providers: [],
    bootstrap: [
