@@ -1,5 +1,5 @@
 <div class="hero-list-box">
-    <h1>英雄列表</h1>
+    <h1>英雄一览</h1>
     <div class="hero-list" id="aa" [style.height]="'true'? height+'px': height+'px'">
         <li *ngFor="let hero of heroes" routerLink="/herodetail/{{hero.id}}">
             <span>{{hero.id}}</span> {{hero.name}}
