@@ -6,9 +6,9 @@ import { HeroDetialComponent } from './hero-detial/hero-detial.component';
 
 
 const routes: Routes = [
-  { path: 'herodetail/:id', component: HeroDetialComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'herolist', component: HeroListComponent },
+  { path: 'herodetail/:id', component: HeroDetialComponent, data: { animation: 'detail' } },
+  { path: 'dashboard', component: DashboardComponent, data: { animation: 'dashboard' } },
+  { path: 'herolist', component: HeroListComponent, data: { animation: 'herolist' } },
   { path: '', component: DashboardComponent }
 ];
 

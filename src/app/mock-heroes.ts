@@ -28,15 +28,10 @@ export class MockHeroes {
     }
 
     static setHEROES(id: number, name: string) {
-        console.log('Mocd.set done+++++++++++++' + id);
         let i = 0;
         while (i < this.HEROES.length) {
-            console.log(
-                `${i}: ${id}++++++++++++++${this.HEROES[i].id}
-                ${typeof(id)}++++++++++++++${typeof(this.HEROES[i].id)}`);
             if (this.HEROES[i].id === +id) {
                 this.HEROES[i].name = name;
-                console.log('+++++++++++++++++renamed to ' +  this.HEROES[i].name);
                 break;
             }
             i++;

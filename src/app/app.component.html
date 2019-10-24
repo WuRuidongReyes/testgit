@@ -1,6 +1,6 @@
 <div class="nav">
   <li>
-    <img height=64px width=64px title="LOGO" alt="LOGO" src="../assets/images/logo_64px.png">
+    <img height=64px width=64px title="LOGO" alt="LOGO" src="./assets/images/logo_64px.png">
   </li>
   <li title="Home">
     <h1>英雄之旅</h1>
@@ -11,4 +11,6 @@
   </ul>
   <app-search-box></app-search-box>
 </div>
-<router-outlet></router-outlet>
+<div [@routerAnimations]='prepareRoute(outlet)'>
+  <router-outlet #outlet="outlet" ></router-outlet>
+</div>

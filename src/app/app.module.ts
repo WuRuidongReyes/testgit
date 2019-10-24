@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroDetialComponent } from './hero-detial/hero-detial.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
    declarations: [
@@ -19,6 +20,7 @@ import { SearchBoxComponent } from './search-box/search-box.component';
    imports: [
       BrowserModule,
       AppRoutingModule,
+      BrowserAnimationsModule
    ],
    providers: [],
    bootstrap: [

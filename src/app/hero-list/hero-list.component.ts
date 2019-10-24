@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroService } from '../hero.service';
 import { Hero } from '../hero';
-import { DOCUMENT } from '@angular/common';
-import { element } from 'protractor';
 
 @Component({
   selector: 'app-hero-list',
@@ -21,10 +19,7 @@ export class HeroListComponent implements OnInit {
   ngOnInit() {
     this.heroes = this.heroService.getHeroes();
 
-    console.log('HeroList: ', window.innerHeight);
     this.height = window.innerHeight - 160;
-    console.log('HeroList: ', this.height);
-    console.log('HeroList: ', document.getElementsByClassName('hero-list'));
     // const HERO_LIST = document.getElementById('aa');
     // HERO_LIST.style.height = String(this.height) + 'px';
     // HERO_LIST.setAttribute('style', `height:${this.height}px`);

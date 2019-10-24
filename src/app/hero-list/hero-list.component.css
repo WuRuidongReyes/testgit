@@ -1,6 +1,5 @@
 div.hero-list-box {
-    position: fixed;
-    top: 80px;
+    position: absolute;
     left: 0px;
     bottom: 0px;
     width: 250px;

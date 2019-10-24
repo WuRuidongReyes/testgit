@@ -1,6 +1,7 @@
-.dashboard {
-    position: fixed;
+div.dashboard {
+    position: absolute;
     top: 80px;
+    left: 0px;
     text-align: center;
     margin: auto;
     width: 100%;
